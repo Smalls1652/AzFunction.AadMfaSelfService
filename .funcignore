@@ -1,0 +1,7 @@
+.git*
+.vscode
+local.settings.json
+test
+Initialize-AadMfaModule.ps1
+Initialize-LocalSettings.ps1
+README.md

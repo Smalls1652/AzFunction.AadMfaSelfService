@@ -1,0 +1,25 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Start Function host",
+      "detail": "Start the Function host locally for testing.",
+      "type": "func",
+      "command": "host start",
+      "problemMatcher": "$func-powershell-watch",
+      "isBackground": true
+    },
+    {
+      "label": "Build AzureAD.MFA.Pwsh module",
+      "detail": "Download and build the latest version for the Function app.",
+      "type": "shell",
+      "command": ".\\Initialize-AadMfaModule.ps1",
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
+      "problemMatcher": [],
+      "isBackground": false
+    }
+  ]
+}
